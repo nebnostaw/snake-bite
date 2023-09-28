@@ -1,5 +1,9 @@
 # snake-bite
 
+An experimental tool for analyzing batches of Android APK(s) in order
+to discover misconfigurations, vulnerabilities and interesting code patterns.
+
+
 `python3 sb.py`
 
 ## Commands
