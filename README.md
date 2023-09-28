@@ -3,8 +3,20 @@
 An experimental tool for analyzing batches of Android APK(s) in order
 to discover misconfigurations, vulnerabilities and interesting code patterns.
 
+## Run
+```commandline
+python3 sb.py 
 
-`python3 sb.py`
+ _______ __    _ _______ ___   _ _______   _______ ___ _______ _______ 
+|       |  |  | |   _   |   | | |       | |  _    |   |       |       |
+|  _____|   |_| |  |_|  |   |_| |    ___| | |_|   |   |_     _|    ___|
+| |_____|       |       |      _|   |___  |       |   | |   | |   |___ 
+|_____  |  _    |       |     |_|    ___| |  _   ||   | |   | |    ___|
+ _____| | | |   |   _   |    _  |   |___  | |_|   |   | |   | |   |___ 
+|_______|_|  |__|__| |__|___| |_|_______| |_______|___| |___| |_______|
+    
+(snakebite) > 
+```
 
 ## Commands
 
