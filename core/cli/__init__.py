@@ -30,6 +30,8 @@ class SnakeBite(Cmd):
         if args.batch:
             if os.path.isdir(args.path):
                 in_queue = multiprocessing.Queue()
+                # Collect all the APK(s) from the directory and add them to
+                # the processing queue
                 apks = collect_apks(args.path)
                 for i in apks:
                     in_queue.put(i)
@@ -37,6 +39,8 @@ class SnakeBite(Cmd):
                 process_manager = ProcessManager.create(10, in_queue, Analyzed.analyze, analyzed_callback)
                 process_manager.run()
         else:
+            # Ensure the path is an APK
+            # TODO ~ Do more work to determine if the file is an APK
             if os.path.isfile(args.path):
                 in_queue = multiprocessing.Queue()
                 in_queue.put(args.path)

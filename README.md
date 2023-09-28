@@ -28,5 +28,16 @@ python3 sb.py
 
 `scan -p /path/to/APK`
 
+---
+`exported_receivers`
++ Display the detected exported Broadcast Receivers
+
+---
+`exported_services`
++ Display the detected exported Services
+
+---
+`implicit_intents`
+
 ## TODO
 + Add switch for number of processes to `scan` command
