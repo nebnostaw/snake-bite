@@ -35,6 +35,12 @@ python3 sb.py
 ---
 `exported_services`
 + Display the detected exported Services
++ Display binder methods attached to an exported services if any
++ Display intent filters for an exported service if any
+
+`exported_services --rpc-methods`
+
+`exported_services --intent_filters`
 
 ---
 `implicit_intents`
