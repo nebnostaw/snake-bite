@@ -18,6 +18,14 @@ python3 sb.py
 (snakebite) > 
 ```
 
+## Modules
+
++ Javascript Interfaces
++ Implicit Intents
++ Nano WebServer Implementations
++ Backup enabled APK(s)
++ Exported Components
+
 ## Commands
 
 `scan`
