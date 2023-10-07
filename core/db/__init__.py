@@ -27,7 +27,7 @@ class APKBackup(BASE):
 class ImplicitIntent(BASE):
     __tablename__ = "implicit_intent"
     id = Column(Integer, primary_key=True, index=True)
-    apk_name = Column(String(50))
+    app = Column(String(50))
     class_name = Column(String(50))
     source_method = Column(String(50))
     intent_method = Column(String(50))
@@ -69,3 +69,11 @@ class NanoWebServer(BASE):
     app = Column(String(50), nullable=False)
     class_name = Column(String(50), nullable=False)
     routed_methods = Column(JSON, nullable=True)
+
+
+class JavascriptInterface(BASE):
+    __tablename__ = "javascript_interface"
+    id = Column(Integer, primary_key=True, index=True)
+    app = Column(String(50), nullable=False)
+    class_name = Column(String(50), nullable=False)
+    source_method = Column(String(50), nullable=False)
