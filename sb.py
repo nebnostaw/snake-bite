@@ -15,5 +15,5 @@ def banner():
 
 if __name__ == "__main__":
     banner()
-    rainmaker = SnakeBite()
-    rainmaker.cmdloop()
+    sb = SnakeBite()
+    sb.cmdloop()

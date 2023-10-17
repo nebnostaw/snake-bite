@@ -22,7 +22,7 @@ class VulnImplicitIntentRule(DetectionRule):
         with Session(ENGINE) as session:
             # We want to ensure we are not inserting records with duplicate class method names
             if session.query(ImplicitIntent.id).filter_by(class_name=clazz.name).first() is None:
-                implicit_intent = ImplicitIntent(apk_name=app_name,
+                implicit_intent = ImplicitIntent(app=app_name,
                                                  class_name=clazz.name, source_method=method.name,
                                                  intent_method=xref.name)
                 session.add(implicit_intent)
