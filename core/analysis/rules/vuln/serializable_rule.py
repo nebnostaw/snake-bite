@@ -19,6 +19,6 @@ class SerializableRule(DetectionRule):
                         if "Serializable" in i:
                             m: EncodedMethod
                             for m in c.get_methods():
-                                if m.get_code_off() == 0:
+                                if m.get_code_off() == 0 and "abstract" not in c.get_access_flags_string():
                                     detect(f"Found native method => "
                                            f"{m.get_name()}() in Serializable class {c.get_name()}")
