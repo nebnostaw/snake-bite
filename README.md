@@ -25,6 +25,7 @@ python3 sb.py
 + Nano WebServer Implementations
 + Backup enabled APK(s)
 + Exported Components
++ Serializable
 
 ## Commands
 
