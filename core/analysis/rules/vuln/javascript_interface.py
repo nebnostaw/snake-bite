@@ -1,6 +1,6 @@
 from typing import Any
 
-from androguard.core.bytecodes.apk import APK
+from androguard.core.analysis.analysis import Analysis, ClassAnalysis, MethodClassAnalysis
 from androguard.core.bytecodes.dvm import EncodedMethod, Instruction
 from sqlalchemy.orm import Session
 
@@ -8,8 +8,6 @@ from core.analysis import Analyzed
 from core.analysis.rules.base import DetectionRule
 from core.db import ENGINE, JavascriptInterface
 from core.logging import info, detect
-
-from androguard.core.analysis.analysis import Analysis, ClassAnalysis, MethodClassAnalysis
 
 WEBVIEW = "Landroid/webkit/WebView;"
 JS_INTERFACE = "addJavascriptInterface"
