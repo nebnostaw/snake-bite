@@ -1,3 +1,5 @@
+import sys
+
 from core.cli import SnakeBite
 
 
@@ -14,6 +16,9 @@ def banner():
 
 
 if __name__ == "__main__":
-    banner()
-    sb = SnakeBite()
-    sb.cmdloop()
+    try:
+        banner()
+        sb = SnakeBite()
+        sb.cmdloop()
+    except KeyboardInterrupt:
+        sys.exit(0)
