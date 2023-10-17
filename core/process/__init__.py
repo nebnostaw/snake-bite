@@ -49,6 +49,7 @@ class ProcessManager(object):
         """
         Kick off all the processes that need to be executed governed by the number of processes property
         """
+        # Get SQLAlchemy to work with multiprocessing
         METADATA.create_all(ENGINE)
         ENGINE.dispose()
         processes = list()

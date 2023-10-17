@@ -5,6 +5,10 @@ from core.logging import info
 
 
 def collect_apks(build_path: str) -> List:
+    """
+    Collect all the `debug` APK(s) from a given build path
+    :param build_path: The build path
+    """
     collection = list()
     for root, d, f, in os.walk(build_path):
         # The build directory should contain at least two entries
