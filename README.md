@@ -1,4 +1,4 @@
-# snake-bite
+# snake-bite (WIP)
 
 An experimental tool for analyzing batches of Android APK(s) in order
 to discover misconfigurations, vulnerabilities and interesting code patterns.
